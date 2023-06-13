@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Choropleth map (static) · QGIS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Marijn Groot</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="index.html #one">About</a></li>
+											<li><a href="index.html #two">Maps</a></li>
+											<li><a href="index.html #three">Programming</a></li>
+											<li><a href="index.html #four">Contact</a></li>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Choropleth map · static</h2>
+							<p>QGIS</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<p>This map shows the proportion of important sites for biodiversity that are covered by protection regulations. It was created in QGIS, using data obtained from the United Nations.</p>
+
+								<hr />
+								<center><div class="image"><img src="images/sdg_15.1.2.png" alt="" width="800"/></div><div class="content"></center>
+
+								<p></p>
+
+								<p>As the data set for my choropleth map, I selected SDG indicator 15.1.2; the proportion of important sites for terrestrial and freshwater biodiversity that are covered by protected areas, by ecosystem type. Out of the two types of biodiversity, I chose the terrestrial data set. I took the data from the year 2017, as this is the year in which the SDG indicators were developed. I deemed it interesting to see what the situation was at the time when this system was created.</p>
+								<p>The visualisation process was the part of the assignment I enjoyed the most, as it required some creative thinking. The colour choice for my choropleth map was a relatively easy one; for terrestrial nature protection, I selected a gradient of shades of green, in which darker shades represent a higher proportion of protected areas (as this is a positive feat). In order to make the lighter shaded countries stand out more, I added in a base map, with the oceans in light blue. I selected equal interval as a classification, as this gave me a well-balanced map; I decided that in my map, an intuitive value of specific countries and their shades of green (so, in the range 0-20, 20-40, …) was more important than the number of countries which were in a specific range (in which case I would have used equal count classification). I centred the map around Europe and Africa, as these regions show the highest values of the protection percentage (and thus, darkest shades), as well as the largest contrasts between different countries within a continent. Therefore, it felt logical to place the regions which draw the most attention at the centre of my map, taking into account its visual hierarchy. I chose a Mollweide projection, as I found the accuracy of the area in my map to be more important than that of angle, since the indicator in question is about the proportion of area that is protected. Therefore, you want an as accurate as possible depiction of area in the map, while still using a projection that is familiar to most people (so that their attention is not drawn towards the ‘strange’ shape of the world, but towards the data themselves).</p>
+								<p>It is important to note that the data in the map are subject to what countries decide to show. Different countries can have very different ways to measure or submit their data. Some countries which have missing data may even have actively decided not to submit their data, for example if they have very limited protection policies. Moreover, even in countries with high protection rates, we have no way of knowing from the data how well these policies are enforced. Therefore, we cannot say with certainty how accurately the map depicts real life protection of Terrestrial Key Biodiversity Areas.</p>
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

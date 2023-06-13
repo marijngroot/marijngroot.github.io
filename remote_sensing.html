@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Remote sensing map · Google Earth Engine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Marijn Groot</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="index.html #one">About</a></li>
+											<li><a href="index.html #two">Maps</a></li>
+											<li><a href="index.html #three">Programming</a></li>
+											<li><a href="index.html #four">Contact</a></li>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Remote sensing map</h2>
+							<p>Google Earth Engine</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<p>This web mab uses false colour composites to portray the topic of seasonality in the French Alps. It was created using remote sensing in Google Earth Engine, with data from the Sentinel-2 satellite.</p>
+								<hr />
+
+								<center><div class="image"><iframe align="right" src="https://marijngroot.users.earthengine.app/view/savineslelac" alt="" height="500" width="600" ></iframe></div><div class="content"></center>
+								
+								<p></p>
+								<p>For my project, I selected an area in the French Alps, surrounding the Lac de Serre-Ponçon. This is a lake that is very dear to me: I visited the area often as a child, as my grandparents live in a village by the lake. I was interested to see how the vegetation (and, obviously, snow coverage) changes on the mountainsides across a year and whether this is visible through remote sensing. Additionally, as the lake consists of meltwater from the mountains, I thought it would be interesting to see whether you can visually see the lake become smaller in winter and grow in summer. </p>
+								<p>For the analysis, I used data obtained by the Sentinel-2 satellite. I selected the band combination [8a, 11, 2]. This represents <a href="https://www.staridasgeography.gr/how-to-make-outstanding-maps-with-sentinel-2-and-arcgis-pro-part-1-band-combinations/"><u>healthy vegetation</u></a>, and depicts all elements I hoped to observe; vegetation is represented by yellow, orange and red colours (with bare soil being a more dull brown), snow coverage is bright purple or lilac, and water is dark blue (where darker shades represent deeper water than lighter shades). In the analysis of summer versus winter, this shows very effectively the increased snow cover, and to a lesser extent also the vegetation change and the seasonal effects on the lake. </p>
+								<p>To make the seasonal comparison, I used two date ranges; 01-01-2021 to 28-03-2021 to represent winter, and 01-05-2021 to 28-09-2021 to represent summer. In the healthy vegetation layers, the contrast is highly visible. The snow coverage in winter is far higher, with almost all snow having melted in summer. Additionally, the part of the map which is not covered by snow in winter has a more brown/green-ish colour, which represents bare soil, as opposed to the orange and yellow coloured vegetation in summer. </p>
+								<p>While the difference between the seasons for the lake is not as pronounced as I was expecting or hoping to see, by zooming into the lake, you do see that the lake has a somewhat lighter blue colour in winter than in summer. This represents a more shallow lake, which corresponds to the expectations (as meltwater influx increases in summer and the collected water flows out again in winter). The surface area of the lake itself also increases very slightly. </p>
+								<p>Lastly, I added in a second combination of bands, to see if this gave similar results to the healthy vegetation bands. For this purpose, I chose Colour Infrared. This band combination has brighter reds for vegetation, red/brown colours for bare soil, and white for snow, and it shows the same patterns as the initial Healthy Vegetation bands across winter and summer!</p>
+								<p>The permanent link to the web map can be found <a href="https://marijngroot.users.earthengine.app/view/savineslelac"><u>here</u></a>.
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

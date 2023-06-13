@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Choropleth map (interactive) · ArcGIS Online</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Marijn Groot</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="index.html #one">About</a></li>
+											<li><a href="index.html #two">Maps</a></li>
+											<li><a href="index.html #three">Programming</a></li>
+											<li><a href="index.html #four">Contact</a></li>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Choropleth map · interactive</h2>
+							<p>ArcGIS Online</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+								<p>This web map shows a comparison of biodiversity protection across time, using a choropleth map with SDG indicator 15.1.2, as well as classification and colour schemes, but for different years. With the accompanying interactive web app, users can toggle between the two years and analyse the contrast between the current and past state of biodiversity protection.</p>
+
+								<hr />
+
+								<center><div class="image"><iframe align="right" src="https://uni-utrecht.maps.arcgis.com/apps/webappviewer/index.html?id=fca9500a02d641d8ab7ad2a24e99f8f0" alt="" height="500" width="600" ></iframe></div><div class="content"></center>
+								
+								<p></p>
+
+								<p>For my interactive web map assignment, I aimed to create a comparison across time using a similar approach to the static choropleth map from assignment 3. I decided to use the same SDG indicator and colour schemes, but with different years; I wanted to include an analysis of the change across time of the proportion of Terrestrial Key Biodiversity Areas that were covered by protected areas. Initially, I attempted to develop a web app with a sliding widget that would showcase data from all years between 2000 and the present (allowing users to set the slider to different years and view the global biodiversity protection at that time. However, I encountered challenges in combining the data for all years into a variable which I could use to create the slider. After trying for a long time, I decided to give up and settle for an easier version: creating a swiping map featuring data from only the first and last year, instead of including all years in between.</p>
+								<p>To ensure an accurate comparison, I remade and cleaned the two databases: one for the year 2000 and another for the latest available year. Since not all countries had data available for 2021, I decided to select the most recent year for which data was available (which was available from the UN website as ‘latest year’). As part of this process, I modified the problematic country names (by now, I was familiar with these) and removed any unnecessary columns to minimise confusion. Additionally, I had to standardise the classification scale to facilitate a meaningful comparison between the two years and their respective layers. Instead of equal count classification, which I initially applied, I changed it to an equal interval classification to ensure the functional comparability of the two datasets.</p>
+								<p>After completing the database modifications, I proceeded to integrate them into the web map as two separate layers. This setup allowed users to easily swipe between the two layers and observe the changes over time. Unfortunately, due to the challenges that I described earlier, I was unable to implement a slider for easy navigation through the years. I deemed the swipe widget the most suitable alternative.</p>
+								<p>To facilitate the user interactivity, I transformed the map into a web app by incorporating various widgets. These widgets included a legend, which provided a key to interpret the colour-coding on the map, as well as the option to turn the different layers on and off. Unfortunately, due to the challenges that I described earlier, I was unable to implement a slider for easy navigation through the years. I deemed the swipe widget the most suitable alternative; through this, I could allow users to compare the data between the initial and final years, even if the entire range between them was not included.</p>
+								<p>Overall, in my interactive web map assignment, I created a comparison across time using a choropleth map with the same SDG indicator, and classification and colour schemes, but for different years. With this map, I made an interactive web app which allows users to toggle between the two years and make an easy and visually appealing comparison of the state of biodiversity protection.</p>
+								<p>The permanent link to the web app can be found <a href="https://uni-utrecht.maps.arcgis.com/apps/webappviewer/index.html?id=fca9500a02d641d8ab7ad2a24e99f8f0"><u>here</u></a>.
+
+
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
