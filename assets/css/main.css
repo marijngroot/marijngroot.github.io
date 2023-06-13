@@ -2721,7 +2721,7 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(5) {
-			background-color: rgba(0, 0, 0, 0.375);
+			background-color: rgba(46,46,67,0.70);
 		}
 
 		.spotlight:nth-child(6) {
